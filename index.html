@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4">
+  </script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="bg-blue-50">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-900">WorkIT</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-100 md:dark:bg-gray-100 dark:border-gray-700">
+          <li><a href="#home"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home</a>
+          </li>
+          <li><a href="#about"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+              Us</a></li>
+          <li><a href="#services"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+          </li>
+          <li><a href="#testimonial"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Testimonials</a>
+          </li>
+          <li><a href="#contact"
+              class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-900 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
+              Us</a></li>
+        </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Hero -->
+  <section class="bg-white" id="home">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+      <div class="grid md:grid-cols-2 gap-16 place-items-center">
+        <!-- Gambar tampil dulu di mobile -->
+        <div class="order-1 md:order-none rounded-lg p-8 md:p-12 place-items-center">
+          <img class="rounded-xl" src="/img/home.jpeg" alt="">
+        </div>
+        <div class="order-2 md:order-none rounded-lg p-8 md:p-12">
+          <h2 class="font-sans text-gray-900 text-3xl font-extrabold mb-2">Want a Cool Website? We'll Build It For You!
+          </h2>
+          <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">From Portfolio to online stores - we make
+            websites that look great and work even better.</p>
+          <a href="https://rizkynuzulal.github.io/Portfolio-PKL/"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 mt-8">
+            Our Portfolio
+            <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 14 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero -->
+
+  <!-- About Us -->
+  <section class="bg-blue-50">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid gap-8 lg:gap-16">
+      <div class="flex flex-col justify-center">
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4 text-center" id="about">--About Us--</p>
+        <h1
+          class="mb-4 text-2xl font-extrabold tracking-tight leading-none text-gray-900 md:text-3xl dark:text-gray-900 mt-2 text-center">
+          About Us</h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-700">
+          As a company specializing in website development services, we deliver tailored digital solutions to support
+          the growth of your business. From company profile websites and e-commerce platforms to complex web-based
+          systems—we’re here to bring your vision to life.
+          Our team of experienced designers, developers, and digital strategists is committed to speed, security, and
+          professional design. More than just building websites, we ensure every project we handle helps increase your
+          brand’s credibility and conversion.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End About Us -->
+
+  <!-- Services -->
+  <p class="text-lg font-normal text-gray-500 dark:text-gray-400 justify-center text-center mt-8" id="services">--Our
+    Services--</p>
+  <h2 class="font-sans text-gray-900 text-3xl font-extrabold mb-2 justify-center text-center mt-8">What can we do
+    for you?</h2>
+  <section class="py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen-xl mx-auto px-4">
+      <!-- Service Card 1 -->
+      <div>
+        <div class="max-w-sm p-6 border-y-2 rounded-lg border-gray-400 text-black text-center">
+          <div class="flex justify-center mb-4">
+            <i data-feather="monitor" id="service"></i>
+          </div>
+          <h5 class="mb-2 text-xl tracking-tight text-black">Software and Mobile Application Development</h5>
+        </div>
+      </div>
+      <!-- Service Card 2 -->
+      <div>
+        <div class="max-w-sm p-6 border-y-2 rounded-lg border-gray-400 text-black text-center">
+          <div class="flex justify-center mb-4">
+            <i data-feather="database" id="service"></i>
+          </div>
+          <h5 class="mb-2 text-xl tracking-tight text-black">Data Processing, Analysis, And Reporting</h5>
+        </div>
+      </div> <!-- Service Card 3 -->
+      <div>
+        <div class="max-w-sm p-6 border-y-2 rounded-lg border-gray-400 text-black text-center">
+          <div class="flex justify-center mb-4">
+            <i data-feather="wifi" id="service"></i>
+          </div>
+          <h5 class="mb-2 text-xl tracking-tight text-black">Smart Wearable Devices, Internet Of Things</h5>
+        </div>
+      </div> <!-- Service Card 4 -->
+      <div>
+        <div class="max-w-sm p-6 border-y-2 rounded-lg border-gray-400 text-black text-center">
+          <div class="flex justify-center mb-4">
+            <i data-feather="file-text" id="service"></i>
+          </div>
+          <h5 class="mb-2 text-xl tracking-tight text-black">IT Auditing</h5>
+        </div>
+      </div> <!-- Service Card 5 -->
+      <div>
+        <div class="max-w-sm p-6 border-y-2 rounded-lg border-gray-400 text-black text-center">
+          <div class="flex justify-center mb-4">
+            <i data-feather="voicemail" id="service"></i>
+          </div>
+          <h5 class="mb-2 text-xl tracking-tight text-black">Business Operations Support</h5>
+        </div>
+      </div> <!-- Service Card 6 -->
+      <div>
+        <div class="max-w-sm p-6 border-y-2 rounded-lg border-gray-400 text-black text-center">
+          <div class="flex justify-center mb-4">
+            <i data-feather="mail" id="service"></i>
+          </div>
+          <h5 class="mb-2 text-xl tracking-tight text-black">IT Consulting</h5>
+        </div>
+      </div>
+  </section>
+  <!-- End Services -->
+
+  <!-- Latest Work -->
+  <div class="bg-blue-50">
+    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 text-center mt-8 pt-8">--Our Latest Work--</p>
+    <h2 class="font-sans text-gray-900 text-3xl font-extrabold mb-2 justify-center text-center mb-8">There is Our Latest
+      Work</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mx-16 my-16">
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="/img/portfolio5.jpeg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="/img/portfolio1.jpeg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="/img/portfolio2.jpeg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="/img/portfolio3.jpeg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="/img/portfolio4.jpeg" alt="">
+      </div>
+      <div>
+        <img class="h-auto max-w-full rounded-lg" src="/img/portfolio6.jpeg" alt="">
+      </div>
+    </div>
+    <!-- End Latest Work -->
+
+    <!-- Testimonials -->
+    <section class="bg-white mt-16 mb-16">
+      <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4 text-center pt-8" id="testimonial">
+        --Testimonials--
+      </p>
+
+      <!-- KOTAK TESTIMONIAL -->
+      <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 bg-blue-50 rounded-lg shadow-xl mt-10 mb-24">
+        <div class="flex justify-center mb-6">
+          <img class="w-32 h-32 rounded-full object-cover" src="/img/testi1.jpeg" alt="Rounded avatar">
+        </div>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-700">
+
+        </p>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48">
+          "Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and
+          drive economic growth."
+        </p>
+      </div>
+    </section>
+  </div>
+  <!-- End Testimonials -->
+
+
+  <!-- Contact -->
+  <section class="bg-blue-50 px-16">
+    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4 text-center pt-8" id="contact">
+      --Contact Us--</p>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class=" rounded-lg p-8 md:p-12">
+        <h2 class="text-gray-900 text-3xl font-extrabold mb-2">We Always Waiting To Talk With You!</h2>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">If you have a project in mind, we’d love to
+          help out and do our best to make something nice for you.</p>
+      </div>
+      <div class=" rounded-lg p-8 md:p-12">
+        <div class="justify-items-center-safe">
+          <!-- Modal toggle -->
+          <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
+            class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-xl px-16 py-4 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            type="button">
+            Contact Us
+          </button>
+
+          <!-- Main modal -->
+          <div id="authentication-modal" tabindex="-1" aria-hidden="true"
+            class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+            <div class="relative p-4 w-full max-w-2xl max-h-full">
+              <!-- Modal content -->
+              <div class="relative rounded-lg shadow-sm bg-slate-400">
+                <!-- Modal header -->
+                <div
+                  class="flex items-center justify-between p-4 md:p-5 border-b rounded-y dark:border-gray-600 border-gray-200">
+                  <h3 class="text-xl font-semibold text-gray-900">
+                    Contact Us
+                  </h3>
+                  <button type="button"
+                    class="end-2.5 text-gray-600 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                    data-modal-hide="authentication-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                      viewBox="0 0 14 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                  </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-4 md:p-5">
+                  <form class="space-y-4" id="contactForm" action="#">
+                    <div>
+                      <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your
+                        Name</label>
+                      <input type="text" name="text" id="name"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="Your Name" />
+                      <p id="error-name" class="mt-1 text-sm text-red-500 hidden">Name is required.</p>
+                    </div>
+                    <div>
+                      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">Your
+                        email</label>
+                      <input type="email" name="email" id="email"
+                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="name@gmail.com" />
+                      <p id="error-email" class="mt-1 text-sm text-red-500 hidden">Valid email is required.</p>
+                    </div>
+                    <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your
+                      message</label>
+                    <textarea id="message" rows="4"
+                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Leave a comment..."></textarea>
+                    <p id="error-message" class="mt-1 text-sm text-red-500 hidden">Message cannot be empty.</p>
+                    <div class="flex justify-between">
+                      <div class="flex items-start">
+                      </div>
+                    </div>
+
+                    <button type="submit" id="submitButton" data-modal-target="popup-modal"
+                      class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                      Submit
+                    </button>
+
+                    <div id="popup-modal" tabindex="-1"
+                      class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                      <div class="relative p-4 w-full max-w-md max-h-full">
+                        <div class="relative bg-blue-200 rounded-lg shadow-sm">
+                          <button type="button"
+                            class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                            data-modal-hide="popup-modal">
+                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                              viewBox="0 0 14 14">
+                              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                          </button>
+                          <div class="p-4 md:p-5 text-center">
+                            <h3 class="mb-5 text-lg font-normal text-gray-500 dark:text-slate-600">Your Message Has Been
+                              Sent</h3>
+                            <button data-modal-hide="popup-modal" type="button"
+                              class="text-white bg-blue-400 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center">
+                              Close
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- End Contact -->
+
+  <!-- Footer -->
+
+
+  <footer class="bg-white shadow-sm m-4">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-500">WorkIT</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+          <li>
+            <a href="#home" class="hover:underline me-4 md:me-6">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover:underline me-4 md:me-6">About Us</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:underline me-4 md:me-6">Services</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="hover:underline me-4 md:me-6">Testimonials</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:underline">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+      <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://flowbite.com/"
+          class="hover:underline">WorkIT</a>. All Rights Reserved.</span>
+    </div>
+  </footer>
+
+
+  <!-- End Footer -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  <script>
+    feather.replace();
+  </script>
+</body>
+
+</html>
